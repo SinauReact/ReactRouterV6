@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const [users, setUsers] = useState([]);
   const navigate = useNavigate();
+
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((resp) => resp.json())
