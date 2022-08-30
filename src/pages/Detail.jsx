@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Outlet, Link } from "react-router-dom";
 
 const Detail = () => {
   const { id } = useParams();
@@ -19,6 +19,11 @@ const Detail = () => {
       <p>Detail Page</p>
       <p>Params id: {id}</p>
       <pre> {JSON.stringify(user, null, 2)} </pre>
+      <hr />
+      <nav>
+        <Link to="post"> Post</Link> | <Link to="product">Product</Link>
+      </nav>
+      <Outlet />
     </div>
   );
 };
