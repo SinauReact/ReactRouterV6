@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
 
 const Detail = () => {
   const { id } = useParams();
@@ -19,6 +19,11 @@ const Detail = () => {
       <p>Detail Page</p>
       <p>params id: {id}</p>
       <pre> {JSON.stringify(user, null, 2)} </pre>
+      <hr />
+      <nav>
+        <Link to={"post"}>Post</Link> | <Link to={"product"}>Product</Link>
+      </nav>
+      <Outlet />
     </>
   );
 };
