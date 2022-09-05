@@ -1,4 +1,4 @@
-React Router DOM v6
+## React Router DOM v6
 
 1.installation
 2.Configuraton Route
@@ -7,6 +7,7 @@ React Router DOM v6
 5.Nested Route
 6.Private Route
 
-##referensi
-(M Fikri Youtube Channel)[https://www.youtube.com/watch?v=mNqZGTD-8os]
-https://reactrouter.com/en/main
+## References
+[M Fikri Youtube Channel](https://www.youtube.com/watch?v=mNqZGTD-8os)
+[Documentation of React Router DOM v6](https://reactrouter.com/en/main)
+
