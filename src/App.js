@@ -5,6 +5,7 @@ import Product from "./components/Product";
 import Detail from "./pages/Detail";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import ProtectedRouted from "./pages/routes/ProtectedRouted";
 
 function App() {
   return (
@@ -14,7 +15,14 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:id" element={<Detail />}>
+        <Route
+          path="/:id"
+          element={
+            <ProtectedRouted>
+              <Detail />
+            </ProtectedRouted>
+          }
+        >
           <Route path={"post"} element={<Post />} />
           <Route path={"product"} element={<Product />} />
         </Route>
